@@ -21,7 +21,6 @@ public class HotelPage {
         for (WebElement location: listLocationHotel) {
             String locationHotelText = location.getText();
             String[] parts = locationHotelText.split(", ");
-            String part1 = parts[0];
             String part2 = parts[1];
             if (part2.equals(nameTown)) {
                 continue;
